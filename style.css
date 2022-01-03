@@ -1,0 +1,616 @@
+
+/* reset code starts here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+
+html{
+    background-color: #f3f0f0;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #fff;
+    width: 136.6rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.2rem 0.2rem 0.2rem #000000, -0.2rem -0rem -0.2rem #000000;
+}
+
+/* reset ends here */
+
+
+
+
+
+
+/* common code starts */
+
+.common-section{
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.common-heading{
+    font-size: 8rem;
+    text-align: center;
+    font-family: 'Italianno', 'cursive';
+}
+
+.button{
+    text-align: center;
+    background-color: rgb(230,159,8);
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    cursor: pointer;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+}
+
+
+/* common code ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header starts */
+
+#blog-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+}
+
+#blog-header .logo-figure{
+    border: 1px solid white;
+}
+
+#blog-header .logo-figure .logo{
+    font-size: 4rem;
+}
+
+#blog-header nav ul li{
+    display: inline-block;
+    padding: 1rem;
+    margin-right: 2rem;
+    transition: all 0.4s;
+}
+
+#blog-header nav ul li:last-child{
+    margin-right: 0;
+}
+
+#blog-header nav ul li:hover{
+    background-color: #1913d5;
+    border-radius: 0.5rem;
+}
+
+#blog-header nav ul li .nav-link{
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* header................................................ ends */
+
+
+
+
+
+
+
+
+/* main starts */
+
+        /* banner starts */
+
+#blog-banner{
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+#blog-banner article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+
+#blog-banner article h1{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    color: white;
+}
+
+#blog-banner article p{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+#blog-banner aside{
+    flex-basis: 50%;
+}
+
+#blog-banner aside img{
+    width: 55rem;
+    height: 55rem;
+    border: 0.3rem solid;
+}
+
+        /* ...................banner ends */
+
+
+
+        /* about me starts */
+
+#blog-about{
+    background-color: #4c4c4c;
+}
+
+#blog-about h2{
+    color: white;
+}
+
+#blog-about .card-container{
+    display: flex;
+    align-items: center;
+}
+
+#blog-about .card-container .card{
+    flex: 1;
+    background-color: #a09d9d;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+    border-radius: 0.5rem;
+}
+
+#blog-about .card-container .card:hover{
+    transform: scale(1.1);
+}
+
+#blog-about .card-container .card .heading{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#blog-about .card-container .card .desc{
+    padding: 0.4rem 0;
+    text-align: justify;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+
+        /* ....................about me ends */
+
+
+        /* archives starts */
+
+#archives .archives-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    padding-bottom: 0rem;
+    border-top: 0.1rem solid;
+    border-bottom: 0.1rem solid;
+}
+
+#archives .archives-container ul{
+    display: flex;
+    text-align: center;
+}
+
+#archives .archives-container ul li{
+    margin: 1.2rem;
+    margin-bottom: 0rem;
+}
+
+#archives .archives-container ul li img{
+    width: 100%;
+    height: 80%;
+    border-radius: 0.6rem;
+    transition: transform 0.4s;
+}
+
+#archives .archives-container ul li img:hover{
+    transform: scale(1.1)
+}
+
+        /* ......................archives ends */
+
+        /* blog post starts */
+
+#blog-post{
+    padding: 2rem 1rem;
+}
+
+#blog-post .blog{
+    width: 70%;
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0rem 0.1rem #222;
+    border-radius: 0.5rem;
+    transition: transform 0.4s;
+}
+
+#blog-post .blog:hover{
+    transform: scale(1.1);
+}
+
+#blog-post .blog aside{
+    flex: 1;
+}
+
+#blog-post .blog aside img{
+    height: 100%;
+    width: 100%;
+}
+
+#blog-post .blog article{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+#blog-post .blog article h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#blog-post .blog article h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#blog-post .blog article p{
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+#blog-post .blog article .blog-btn{
+    margin: 2.5rem 0;
+}
+
+        /*.......................blog post ends */
+
+        /* contracts starts */
+
+#contract{
+    background-color: #4c4c4c;
+}
+
+#contract h2{
+    color: white;
+}
+
+#contract form{
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0rem 0.1rem #222;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#contract form .form-control{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contract form .form-control label{
+    font-size: 1.8rem;
+    flex: 0.2;
+}
+
+#contract form .form-control input, textarea{
+    flex: 0.8;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 1.5rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+
+#contract form .form-control textarea{
+    resize: none;
+    height: 18vh;
+}
+
+#contract form .form-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contract form .form-btn .contract-btn{
+    width: 30%;
+    transition: transform 0.4s;
+}
+
+#contract form .form-btn .contract-btn:hover{
+    transform: scale(1.1);
+}
+
+        /* .......................contracts ends */
+
+/* main................................................... ends */
+
+
+
+
+
+
+/* footer start */
+
+footer{
+    background-color: #000000;
+    padding: 3rem;
+    color: white;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .desc{
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+}
+
+footer .footer-btn .btna, .btnf, .btnl, .btny, .btnt {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    margin: 0rem 0.6rem;
+    text-align: center;
+}
+
+footer .footer-btn .btna, .btnf, .btnl, .btny, .btnt{
+    transition: 0.9s;
+}
+
+
+footer .footer-btn .btna:hover, .btnf:hover, .btnl:hover, .btny:hover, .btnt:hover{
+    transform: scale(1.1);
+    background-color: #1913d5;
+    opacity: 0.6;
+}
+
+/* footer end.................................................................... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive starts */
+
+@media (max-width: 992px){
+
+    #blog-banner{
+        flex-direction: column;
+    }
+    
+    #blog-banner article{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    #blog-about .card-container{
+        width: 80%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #archives{
+        min-height: auto;
+    }
+
+    footer .desc{
+        font-size: 1.4rem;
+    }
+}
+
+
+
+@media (max-width: 768px){
+    html{
+        font-size: 57.5%;
+    }
+
+    #blog-header nav ul li{
+        margin-right: 1rem;
+    }
+
+    #blog-banner{
+        min-height: auto;
+    }
+
+    #blog-banner article{
+        width: 70%;
+    }
+
+    #blog-about .card-container{
+        width: 70%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #blog-post .blog{
+        flex-direction: column;
+        width: 70%;
+    }
+
+    #contract{
+        width: auto;
+        min-height: auto;
+    }
+}
+
+
+
+@media (max-width: 600px){
+
+    html{
+        font-size: 52.5%;
+    }
+
+    #blog-header{
+        flex-direction: column;
+        position: relative;
+    }
+
+    #blog-header .logo-figure .logo{
+        font-size: 6rem;
+    }
+
+    #blog-header nav{
+        margin-top: 2rem;
+    }
+    
+    #blog-header nav ul li{
+        padding-left:2.5rem;
+    }
+
+    #blog-header nav ul li{
+        display: block;
+        margin: 1rem 0rem;
+    }
+  
+    #blog-banner article{
+        width: 85%;
+    }
+
+    #blog-about .card-container{
+        width: 90%;
+    }
+
+    #archives .archives-container ul{
+        flex-wrap: wrap;
+    }
+
+    #blog-post .blog{
+        width: 90%;
+    }
+
+    #contract form{
+        width: 90%;
+    }
+
+    #contract form .form-control{
+        flex-direction: column;
+    }
+
+    #contract form .form-control label{
+        margin-bottom: 1rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    footer .desc, .footer-btn{
+        text-align: center;
+        margin: 1.5rem 0;
+
+    }
+
+}
+
+
+
+@media (max-width: 400px){
+
+    html{
+        font-size: 47.5%;
+    }
+
+    #blog-header .logo-figure .logo{
+        font-size: 5rem;
+    }
+
+    #blog-header nav{
+        margin-top: 1.8rem;
+    }
+
+    #blog-banner article{
+        width: 91%;
+    }
+
+    #blog-about .card-container{
+        width: 100%;
+    }
+}
+
+/* responsive ends */
